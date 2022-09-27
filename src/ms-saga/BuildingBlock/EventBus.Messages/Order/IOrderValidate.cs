@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EventBus.Messages.Order
 {
-    internal class IOrderValidate
+    public interface IOrderValidate
     {
+        public Guid OrderID { get; set; }
     }
 }
