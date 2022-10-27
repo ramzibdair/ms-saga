@@ -11,15 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{642CBE83
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stock", "Stock", "{F7C8C26F-B38B-48B7-BD43-2F81B16BEA2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order", "Services\Order\Order.csproj", "{CDF06F2E-DC40-4CE2-ADD6-C91336D305F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Order", "Services\Order\Order.csproj", "{CDF06F2E-DC40-4CE2-ADD6-C91336D305F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stock", "Services\Stock\Stock.csproj", "{1B0B2ED3-165C-4A1F-9C67-EB804349F4F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stock", "Services\Stock\Stock.csproj", "{1B0B2ED3-165C-4A1F-9C67-EB804349F4F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Messages", "BuildingBlock\EventBus.Messages\EventBus.Messages.csproj", "{49FFE318-C535-4AE9-ADE9-06043BCB3E7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Messages", "BuildingBlock\EventBus.Messages\EventBus.Messages.csproj", "{49FFE318-C535-4AE9-ADE9-06043BCB3E7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Saga", "BuildingBlock\EventBus.Saga\EventBus.Saga.csproj", "{B43A5954-454F-44C5-850F-5336B9CCE01F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Saga", "BuildingBlock\EventBus.Saga\EventBus.Saga.csproj", "{B43A5954-454F-44C5-850F-5336B9CCE01F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saga.Machine", "BuildingBlock\Saga.Machine\Saga.Machine.csproj", "{EB9BF788-688C-4DD6-81FE-156C8D291EC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Saga.Machine", "BuildingBlock\Saga.Machine\Saga.Machine.csproj", "{EB9BF788-688C-4DD6-81FE-156C8D291EC0}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E6E58ED6-A225-44A6-A127-AE95216C1568}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{EB9BF788-688C-4DD6-81FE-156C8D291EC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB9BF788-688C-4DD6-81FE-156C8D291EC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB9BF788-688C-4DD6-81FE-156C8D291EC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6E58ED6-A225-44A6-A127-AE95216C1568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6E58ED6-A225-44A6-A127-AE95216C1568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6E58ED6-A225-44A6-A127-AE95216C1568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6E58ED6-A225-44A6-A127-AE95216C1568}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

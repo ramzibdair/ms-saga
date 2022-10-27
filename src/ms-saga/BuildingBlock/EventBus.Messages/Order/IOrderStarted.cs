@@ -8,9 +8,9 @@ namespace EventBus.Messages.Order
 {
     public interface IOrderStarted
     {
-        public Guid OrderID { get; set; }
-        public string UserName { get; set; }
-        public decimal TotalPrice { get; set; }
-        public string Products { get; set; }
+         Guid OrderID { get; set; }
+         string UserName { get; set; }
+         decimal TotalPrice { get; set; }
+         string Products { get; set; }
     }
 }

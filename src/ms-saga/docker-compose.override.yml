@@ -1,0 +1,44 @@
+version: '3.4'
+
+services:
+ 
+  #catalog.api:
+  #  container_name: catalog.api
+  #  environment:
+  #    - ASPNETCORE_ENVIRONMENT=Development
+  #    - "DatabaseSetting:ConnectionString=mongodb://catalogdb:27017"
+  #  depends_on:
+  #    - catalogdb
+  #  ports:
+  #    - "8000:80"
+
+  rabitmq:
+    container_name: rabiitmq
+    restart: always
+    ports:
+      - 15672:15672
+
+  rediscache:
+    container_name: rediscache
+    restart: always
+    ports:
+      - 6379:6379
+
+  portainer:
+    container_name: portainer
+    restart: always
+    ports:
+      - 9000:9000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+  
+  orderdb:
+    container_name: orderdb
+    environment:
+      - SA_PASSWORD=Pass@word
+      - ACCEPT_EULA=Y
+    ports:
+      - "5433:1433"
+    volumes:
+      - orderdb_data:/var/opt/mssql 

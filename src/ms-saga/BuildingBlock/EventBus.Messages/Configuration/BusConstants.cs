@@ -8,7 +8,7 @@ namespace EventBus.Messages.Configuration
 {
     public class BusConstants
     {
-        public const string RabbitMqUri = "rabbitmq://localhost/";
+        public const string RabbitMqUri = "rabbitmq://localhost:15672/";
         public const string UserName = "guest";
         public const string Password = "guest";
         public const string validateOrderQueue = "validate-order-queue";

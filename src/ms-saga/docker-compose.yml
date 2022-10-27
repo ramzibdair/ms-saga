@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+
+  #catalog.api:
+  #  image: ${DOCKER_REGISTRY-}catalogapi
+  #  build:
+  #    context: .
+  #    dockerfile: Services/Catalog/Catalog.API/Dockerfile
+
+  rabitmq:
+    image: rabbitmq:3-management
+  
+  rediscache:
+    image: redis
+  
+  portainer:
+    image: portainer/portainer-ce
+ 
+  orderdb:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    
+volumes:
+  portainer_data:
+  orderdb_data:
